@@ -32,7 +32,7 @@ digito.forEach(i => {
         if (i.innerHTML != '.') {
             calc.values[calc.position] += i.innerHTML
         }
-        console.log(calc.values)
+        // console.log(calc.values)
         document.getElementById('display').innerHTML = calc.values[calc.position]
     })
 })
@@ -43,7 +43,7 @@ operator.forEach(operador => {
         calc.operator = operador.innerHTML
         calc.position = 1
         calc.clear = true
-        console.log(calc.operator)
+        // console.log(calc.operator)
     })
 })
 
@@ -57,7 +57,7 @@ document.getElementById('clear').addEventListener('click', () => {
 
 document.getElementById('equal').addEventListener('click', function () {
     PR.calcular(calc.values[0], calc.values[1], calc.operator).then(function () {
-        console.log(`Digito 1: ${calc.values[0]}, digito 2: ${calc.values[1]} - operação: ${calc.operator}`)
+        // console.log(`Digito 1: ${calc.values[0]}, digito 2: ${calc.values[1]} - operação: ${calc.operator}`)
         document.getElementById('display').innerHTML = arguments[0]
         calc.clear = true
         calc.position = 0
