@@ -1,5 +1,9 @@
 const host = 'http://localhost:8081'
 
+if (location.hostname !== 'localhost') {
+    host = 'https://rmi-js.herokuapp.com/'
+}
+
 const PR = {
     calcular: function () { }
 }
