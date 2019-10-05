@@ -20,7 +20,7 @@ rmi.setImplementation({
                 break;
             case '/':
                 if (parseFloat(a) === 0) {
-                    return 'ERRO'
+                    return 'Não é possível dividir por zero'
                 } else {
                     return parseFloat(b) / parseFloat(a)
                 }
