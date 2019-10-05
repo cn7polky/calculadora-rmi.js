@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/main.css">
+    <script defer src="/static/client/socketio.min.js"></script>
+    <script defer src="/static/client/rmijs.c.min.js"></script>
+    <script defer src="/static/main.js"></script>
+    <title>RMI.js</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <section id="calculadora">
+            <!-- Input e clear -->
+            <header class="top">
+                <div id="display" class="input-valor">0</div>
+            </header>
+            <ul class="key">
+                <li class="digito">7</li>
+                <li class="digito">8</li>
+                <li class="digito">9</li>
+                <li id="div" class="operador">/</li>
+                <li class="digito">4</li>
+                <li class="digito">5</li>
+                <li class="digito">6</li>
+                <li id="multi" class="operador">*</li>
+                <li class="digito">1</li>
+                <li class="digito">2</li>
+                <li class="digito">3</li>
+                <li id="sub" class="operador">-</li>
+                <li class="digito">0</li>
+                <li class="digito">.</li>
+                <li id="soma" class="operador">+</li>
+                <li id="clear">c</li>
+                <li id="equal" class="verificar">=</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
